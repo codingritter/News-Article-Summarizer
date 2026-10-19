@@ -23,7 +23,7 @@ Ein Tool, das einen Nachrichtenartikel per URL abruft und daraus mit einem LLM e
 
 ```
 news_summarizer.py   Kernlogik (Artikel-Abruf, Chunking, Summarize-Chain) – ohne UI-Abhängigkeiten
-streamlit_app.py      Streamlit-Oberfläche, baut auf news_summarizer.py auf
+interface.py         Streamlit-Oberfläche, baut auf news_summarizer.py auf
 requirements.txt      Python-Abhängigkeiten
 .env.example           Vorlage für die .env-Datei
 ```
@@ -51,7 +51,7 @@ ollama pull llama3.2
 Streamlit-Oberfläche starten:
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run interface.py
 ```
 
 Alternativ als Python-Modul:
